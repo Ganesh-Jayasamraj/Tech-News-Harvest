@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="head-content">
+                <div class="head-name">
+                    <h1>Mailer <i class="fa fa-envelope" style="font-size: 36px;"></i></h1>
+                </div>
+            </div>
+            <div class="nav-bar">
+                <a href="#">Home</a>
+                <a href="/news">News</a>
+                <a href="/about">About</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-area">
+            <div class="main-content">
+                <div class="input-form">
+                    <div class="input-area">
+                        <form action="/register_email" method="post">
+                            <label for="email" class="email-label">
+                                Want to join with us?
+                            </label>
+                            <input type="text" class="mail-input-box" name="mail-id" id="email" placeholder="mail@example.com">
+                            <button id="submit" class="btn-submit" type="submit">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
